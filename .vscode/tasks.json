@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Package Extension",
+      "type": "shell",
+      "command": "Compress-Archive",
+      "args": [
+        "-Path",
+        ".",
+        "-DestinationPath",
+        "youtube-timestamp-bookmarker.zip",
+        "-Force"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}
